@@ -1,0 +1,35 @@
+.root {
+    -fx-font-family: "Inter", "SF Pro Text", "Segoe UI", sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #07111c;
+}
+
+.app-root {
+    -fx-background-color: #07111c;
+}
+
+.terminal-pane {
+    -vanta-terminal-foreground: #cfd7e3;
+    -vanta-terminal-background: #06101b;
+    -vanta-terminal-selection-foreground: white;
+    -vanta-terminal-selection-background: #1d4ed8;
+    -fx-padding: 0;
+    -fx-background-color: #06101b;
+}
+
+.terminal-widget {
+    -fx-background-color: -vanta-terminal-background;
+}
+
+.terminal-widget .scroll-bar {
+    -fx-background-color: #07111c;
+}
+
+.terminal-widget .scroll-bar .track {
+    -fx-background-color: #07111c;
+}
+
+.terminal-widget .scroll-bar .thumb {
+    -fx-background-color: #203043;
+    -fx-background-radius: 999px;
+}
