@@ -15,7 +15,7 @@ final class VantaTerminalSettings extends DefaultSettingsProvider {
 
     @Override
     public Font getTerminalFont() {
-        return Font.font("JetBrains Mono", getTerminalFontSize());
+        return Font.font("Menlo", getTerminalFontSize());
     }
 
     @Override

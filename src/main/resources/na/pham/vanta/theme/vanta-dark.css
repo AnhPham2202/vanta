@@ -17,6 +17,115 @@
     -fx-background-color: #06101b;
 }
 
+.terminal-tab-strip {
+    -fx-alignment: center-left;
+    -fx-background-color: #0b1624;
+    -fx-padding: 6px 8px 0 8px;
+    -fx-spacing: 4px;
+}
+
+.terminal-tab-list {
+    -fx-alignment: center-left;
+    -fx-spacing: 4px;
+}
+
+.terminal-tab-scroller {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-padding: 0;
+}
+
+.terminal-tab-scroller > .viewport {
+    -fx-background-color: transparent;
+}
+
+.terminal-tab-scroller .scroll-bar:horizontal {
+    -fx-background-color: #0b1624;
+    -fx-pref-height: 6px;
+}
+
+.terminal-tab-scroller .scroll-bar:horizontal .track {
+    -fx-background-color: #0b1624;
+}
+
+.terminal-tab-scroller .scroll-bar:horizontal .thumb {
+    -fx-background-color: #27364a;
+    -fx-background-radius: 999px;
+}
+
+.terminal-tab-scroller .corner {
+    -fx-background-color: transparent;
+}
+
+.terminal-tab,
+.terminal-tab-title,
+.terminal-tab-close,
+.terminal-new-tab-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px 5px 0 0;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5px 5px 0 0;
+    -fx-text-fill: #9aa8ba;
+    -fx-cursor: hand;
+}
+
+.terminal-tab {
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+    -fx-min-width: 132px;
+    -fx-pref-width: 152px;
+    -fx-padding: 0 6px 0 12px;
+    -fx-alignment: center-left;
+}
+
+.terminal-tab-title {
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+    -fx-padding: 0;
+    -fx-alignment: center-left;
+}
+
+.terminal-tab-close {
+    -fx-min-width: 24px;
+    -fx-pref-width: 24px;
+    -fx-min-height: 24px;
+    -fx-pref-height: 24px;
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+    -fx-padding: 0;
+}
+
+.terminal-tab:hover,
+.terminal-tab:hover .terminal-tab-title,
+.terminal-new-tab-button:hover {
+    -fx-background-color: #132235;
+    -fx-text-fill: #d7deea;
+}
+
+.terminal-tab-close:hover {
+    -fx-background-color: #26364a;
+    -fx-text-fill: #eef4ff;
+}
+
+.terminal-tab.selected,
+.terminal-tab.selected .terminal-tab-title {
+    -fx-background-color: #06101b;
+    -fx-text-fill: #eef4ff;
+}
+
+.terminal-new-tab-button {
+    -fx-min-width: 32px;
+    -fx-pref-width: 32px;
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+    -fx-font-size: 16px;
+    -fx-padding: 0;
+}
+
+.terminal-host {
+    -fx-background-color: -vanta-terminal-background;
+}
+
 .terminal-widget {
     -fx-background-color: -vanta-terminal-background;
 }

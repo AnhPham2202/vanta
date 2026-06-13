@@ -18,6 +18,9 @@ final class VantaTerminalPane extends BorderPane {
     private static final Color DEFAULT_SELECTION_FOREGROUND = Color.WHITE;
     private static final Color DEFAULT_SELECTION_BACKGROUND = Color.rgb(29, 78, 216);
 
+    /**
+     * Map css to pane field
+     */
     private static final CssMetaData<VantaTerminalPane, Paint> TERMINAL_FOREGROUND =
             cssPaint("-vanta-terminal-foreground", pane -> pane.terminalForeground);
     private static final CssMetaData<VantaTerminalPane, Paint> TERMINAL_BACKGROUND =
