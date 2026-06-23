@@ -1,5 +1,6 @@
 module na.pham.vanta {
     requires javafx.controls;
+    requires java.management;
     requires com.techsenger.jeditermfx.core;
     requires com.techsenger.jeditermfx.ui;
     requires pty4j;

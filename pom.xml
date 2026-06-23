@@ -90,6 +90,12 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>na.pham.vanta/na.pham.vanta.app.Launcher</mainClass>
+                            <options>
+                                <option>--add-opens</option>
+                                <option>com.techsenger.jeditermfx.ui/com.techsenger.jeditermfx.ui=na.pham.vanta</option>
+                                <option>--add-opens</option>
+                                <option>com.techsenger.jeditermfx.core/com.techsenger.jeditermfx.core.model=na.pham.vanta</option>
+                            </options>
                             <launcher>vanta</launcher>
                             <jlinkZipName>vanta</jlinkZipName>
                             <jlinkImageName>vanta</jlinkImageName>
