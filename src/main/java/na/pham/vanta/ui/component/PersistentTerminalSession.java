@@ -32,15 +32,15 @@ import java.util.concurrent.Future;
 
 final class PersistentTerminalSession implements AutoCloseable {
     private final SettingsProvider settingsProvider;
-    private final TtyConnector connector;
+    private final TtyConnector connector; // connector btween app and shell like bash, zsh, terminal
     private final StyleState styleState = new StyleState();
-    private final TextProcessing textProcessing;
-    private final TerminalTextBuffer textBuffer;
-    private final DisplayProxy displayProxy = new DisplayProxy();
+    private final TextProcessing textProcessing; // for handling extra text style (like hyperlink)
+    private final TerminalTextBuffer textBuffer; // save terminal text state (like cursor, scrollback history, zoom state,...)
+    private final DisplayProxy displayProxy = new DisplayProxy(); //  jediterminal and terminalPanel (replace this), same with terminal Panel but custom to not append 1:1 with jedi termianl, so can detach and attach display as we want
     private final JediTerminal terminal;
     private final TerminalExecutorServiceManager executorServiceManager = new DefaultTerminalExecutorServiceManager();
     private final TerminalTypeAheadManager typeAheadManager;
-    private final TerminalStarter terminalStarter;
+    private final TerminalStarter terminalStarter; // connect all together, manage life cycle, threads, passing data btween connector and terminal
     private Future<?> emulatorFuture;
     private TerminalPanel panel;
     private static final String MODULE_OPEN_OPTIONS = "--add-opens "
